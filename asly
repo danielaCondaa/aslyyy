@@ -1,14 +1,13 @@
 class Famoso:
-    def __init__(self, nombre, profesion, edad):
+    def __init__(self, nombre, profesion):
         self.nombre = nombre
         self.profesion = profesion
-        self.edad = edad
 
-    def saludar(self):
-        print(f"Hola, soy {self.nombre} y soy {self.profesion}. ¡Mucho gusto!")
+    def presentarse(self):
+        print(f"¡Hola! Soy {self.nombre} y soy {self.profesion}. ¡Mucho gusto!")
 
 # Crear una instancia de un famoso
-famoso = Famoso("Leonardo DiCaprio", "actor", 47)
+ada_lovelace = Famoso("Ada Lovelace", "programadora")
 
-# Saludar al famoso
-famoso.saludar()
+# Presentarse como famoso
+ada_lovelace.presentarse()
