@@ -1,13 +1,17 @@
-class Famoso:
-    def __init__(self, nombre, profesion):
-        self.nombre = nombre
-        self.profesion = profesion
+class Pastel:
+    def __init__(self, sabor, ingredientes):
+        self.sabor = sabor
+        self.ingredientes = ingredientes
 
-    def presentarse(self):
-        print(f"¡Hola! Soy {self.nombre} y soy {self.profesion}. ¡Mucho gusto!")
+    def preparar(self):
+        print(f"Preparando un pastel de {self.sabor}...")
+        print("Mezclando los ingredientes: ")
+        for ingrediente in self.ingredientes:
+            print(ingrediente)
+        print("Horneando el pastel... ¡Listo!")
 
-# Crear una instancia de un famoso
-ada_lovelace = Famoso("Ada Lovelace", "programadora")
+# Crear una instancia de un pastel
+pastel_chocolate = Pastel("chocolate", ["harina", "azúcar", "cacao", "huevos", "mantequilla", "leche"])
 
-# Presentarse como famoso
-ada_lovelace.presentarse()
+# Preparar el pastel
+pastel_chocolate.preparar()
